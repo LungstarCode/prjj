@@ -1,0 +1,109 @@
+    {
+        "greetings": [
+            "How can I assist you today?",
+            "UMP student! What can I help you with?",
+            "Feel free to ask me anything related to your experience at UMP."
+        ],
+        "counseling": {
+            "keywords": ["one on one", "counseling", "individual counseling", "personal counseling"],
+            "response": "Our experienced counselors at the University of Mpumalanga provide a safe and confidential space for students to share their experiences and receive support tailored to their needs."
+        },
+        "support groups": {
+            "keywords": ["support groups", "group support", "group therapy"],
+            "response": "Our support groups for UMP students are guided by trained facilitators and meet every Wednesday from 03:00-05:00 PM at the Student Support Center. No registration is required, and students can attend as needed."
+        },
+        "how to register": {
+            "keywords": ["register", "how to sign up", "join"],
+            "response": "No registration is required for support groups at UMP. Just show up at the designated time and location!"
+        },
+        "incident reporting": {
+            "keywords": ["report incident", "file a report", "incident report"],
+            "response": "To report an incident on the UMP campus, please fill out the incident report form available at the Student Affairs office. Ensure all details are accurate to facilitate appropriate support."
+        },
+        "case management": {
+            "keywords": ["case management", "track case", "case status"],
+            "response": "Our case management system at UMP allows you to track the progress of your case. You can receive updates and communicate with your assigned officer through the Student Support Portal."
+        },
+        "health services": {
+            "keywords": ["health services", "medical assistance", "medical care"],
+            "response": "UMP provides comprehensive medical support for students, including assessments, treatments, and follow-up care for victims/survivors of gender-based violence."
+        },
+        "legal assistance": {
+            "keywords": ["legal help", "legal assistance", "lawyer", "legal advice"],
+            "response": "Our Legal Assistance program helps UMP students navigate their legal options, including representation and case management specifically tailored to student needs."
+        },
+        "support services coordination": {
+            "keywords": ["support services", "service coordination", "assistance"],
+            "response": "Support Services Coordination: At UMP, we assess your needs and coordinate with various services to ensure you receive the appropriate support as a student."
+        },
+        "immediate support": {
+            "keywords": ["emergency support", "immediate help", "crisis assistance"],
+            "response": "If you need immediate support, please contact the UMP crisis hotline or visit the Student Support Center for emergency assistance."
+        },
+        "follow-up care": {
+            "keywords": ["follow-up care", "aftercare", "ongoing support"],
+            "response": "Follow-Up Care: We ensure that UMP students receive ongoing support and check-ins after initial assistance to help you on your recovery journey."
+        },
+        "victim advocacy": {
+            "keywords": ["advocacy", "victim support", "victim rights"],
+            "response": "Victim Advocacy: Our advocates at UMP are here to support you, ensuring that your rights are upheld throughout the reporting and recovery process."
+        },
+        "emotional support": {
+            "keywords": ["emotional support", "mental health support", "therapy"],
+            "response": "Emotional Support: UMP provides therapy and counseling services focused on mental well-being specifically for students impacted by gender-based violence."
+        },
+        "feedback": {
+            "keywords": ["feedback", "comments", "suggestions"],
+            "response": "We value your feedback! Please let us know your thoughts or suggestions to help us improve our services at the University of Mpumalanga."
+        },
+        "awareness": {
+            "keywords": ["awareness", "education", "gender-based violence awareness"],
+            "response": "Awareness: Educating ourselves and others about gender-based violence is crucial. UMP offers workshops and resources to help spread awareness and understanding among students."
+        },
+        "prevention": {
+            "keywords": ["prevention", "preventing gbv", "gbv prevention strategies"],
+            "response": "Prevention: UMP promotes strategies to prevent gender-based violence, including community outreach, education, and bystander intervention training tailored for students."
+        },
+        "resources": {
+            "keywords": ["resources", "support resources", "help"],
+            "response": "Resources: We have a list of resources available for UMP students, including hotlines, shelters, and counseling services. Let us know what you need!"
+        },
+        "signs of abuse": {
+            "keywords": ["signs of abuse", "recognizing abuse", "abuse indicators"],
+            "response": "Signs of Abuse: It's important for UMP students to recognize the signs of abuse, which may include physical injuries, emotional distress, and changes in behavior. If you notice these signs in yourself or someone else, seek help."
+        },
+        "safety planning": {
+            "keywords": ["safety planning", "safety measures", "how to stay safe"],
+            "response": "Safety Planning: We can help you create a personalized safety plan to ensure your safety at home, work, and school. This plan can include emergency contacts, escape routes, and more."
+        },
+        "how to support a survivor": {
+            "keywords": ["support a survivor", "help a victim", "support resources for survivors"],
+            "response": "Supporting a Survivor: If you know someone at UMP who has experienced GBV, listen to them without judgment, believe their experience, and encourage them to seek professional help."
+        },
+        "hotline information": {
+            "keywords": ["hotline", "crisis hotline", "gbv hotline"],
+            "response": "Crisis Hotline: If you or someone you know is in immediate danger, please call the UMP crisis hotline at 013-555-0123. We provide 24/7 support for our students."
+        },
+        "legal rights": {
+            "keywords": ["legal rights", "victims' rights", "know your rights"],
+            "response": "Legal Rights: Victims/survivors of GBV at UMP have specific legal rights, including the right to report incidents and receive assistance from legal services. We can help you understand these rights."
+        },
+        "community support": {
+            "keywords": ["community support", "local organizations", "support networks"],
+            "response": "Community Support: Local organizations and support networks are available to help UMP students who are victims/survivors of GBV. We can connect you with these resources."
+        },
+
+        "unknown_query": {
+            "response": "I'm sorry, I can't answer that. I can assist you with questions like:",
+            "suggestions": [
+                "What counseling services are available?",
+                "How do I join a support group?",
+                "How can I report an incident at UMP?",
+                "What health services are provided?",
+                "What legal assistance can I get as a UMP student?",
+                "How do I create a safety plan?",
+                "What should I know about signs of abuse?"
+            ]
+        }
+    
+    }

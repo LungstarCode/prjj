@@ -1,0 +1,315 @@
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: auto; /* Ensure scrolling is allowed */
+}
+
+body {
+    background: #f7a703; /* Same color as nav background */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body is at least as tall as the viewport */
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Allow content to flow vertically */
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px; /* Add padding to ensure footer doesn't overlap content */
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background: #262955; /* Ensure nav and background match */
+    z-index: 100;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.nav-logo .logo {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.nav-logo p {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav-menu ul {
+    display: flex;
+}
+
+.nav-menu ul li {
+    list-style-type: none;
+}
+
+.nav-menu ul li .link {
+    text-decoration: none;
+    font-weight: 400;
+    color: #fff;
+    padding-bottom: 10px;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+.link:hover, .active {
+    border-bottom: 2px solid #fff;
+}
+
+.nav-button .btn {
+    padding: 5px 20px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    color:  #262955;
+    background: #fff;
+    cursor: pointer;
+    margin-right: 30px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.nav-button .white-btn {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.nav-button .btn:hover {
+    transform: scale(0.97);
+}
+
+.nav-menu-btn {
+    display: none;
+}
+
+.home-content {
+    margin-top: 100px;
+    text-align: center;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.home-content h1 {
+    font-size: 40px;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.anonymous-report-container, .form-box {
+    width: 45%;
+    background: #262955;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.anonymous-report-container header, .form-box header {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.input-box {
+    margin: 15px 0;
+    position: relative;
+}
+
+.input-box .input-field {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.input-box .input-field::placeholder {
+    color: #fff;
+}
+
+.submit {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit:hover {
+    background: #ccc;
+}
+
+.input-box i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.top {
+    text-align: center;
+}
+
+.top span {
+    font-size: 14px;
+}
+
+.top a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.top a:hover {
+    text-decoration: underline;
+}
+
+.two-col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.two-col .one {
+    display: flex;
+    align-items: center;
+}
+
+.two-col .one input {
+    margin-right: 5px;
+}
+
+.two-col .two a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.two-col .two a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    width: 100%;
+    background: rgba(39, 39, 39, 0.6);
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.footer a:hover {
+    color: #ccc;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.popup-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-menu-btn {
+        display: block;
+        color: #fff;
+        font-size: 30px;
+        margin-right: 20px;
+    }
+
+    .anonymous-report-container, .form-box {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .home-content h1 {
+        font-size: 30px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+    }
+
+    .form-container {
+        flex-direction: column;
+    }
+}

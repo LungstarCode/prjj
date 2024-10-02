@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <title>Services</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <img src="logo.jpg" alt="UMP SafeSpace Logo" class="logo">
+                <p>UMP SAFE SPACE</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="homepage.html" class="link">Home</a></li>
+                    <li><a href="about.html" class="link">About Us</a></li>
+                    <li><a href="services.html" class="link active">Services</a></li>
+                    <li><a href="contact.html" class="link">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="nav-search">
+                <input type="text" class="search-input" placeholder="Search...">
+                <button class="btn search-btn"><i class='bx bx-search'></i></button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+        
+        
+            <div class="content"><br><br><br>
+                <h1>Our Services</h1>
+                <p>Discover the range of services we offer to support individuals affected by gender-based violence and harassment.</p>
+            <p class="centered-text">We're here to help you heal, grow, and thrive. Our services are designed
+                to provide a safe and supportive space for students 
+                who have experienced harassment.<br> We offer confidential counseling, support groups, and
+                resources to help you navigate your journey.
+            </p><br>
+            <h3 class="centered-text">Please don't hesitate to reach out – we're here to support you every step of the way</h3>
+            <br></div>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h2>One-on-One Counseling</h2><br>
+                    <img src="oo.jpeg" alt="Image 1" class="grid-image">
+                    <p class="grid-description">Our experienced counselors provide a safe and confidential space for students 
+                        to share their experiences and receive support. <br>We offer individual counseling sessions to help students process <br>
+                        their emotions, develop coping strategies, and work towards healing.<br>
+                        <br>- Confidential and non-judgmental support<br>
+                        - Experienced counselors trained in trauma-informed care<br>
+                        - Flexible scheduling to accommodate students' needs<br>
+                        - Goal-oriented support to empower students
+                    </p>
+                </div>
+                <div class="grid-item">
+                    <h2>Supportive Voices</h2> <br>
+                    <img src="hhh.jpg" alt="Image 2" class="grid-image">
+                    <p class="grid-description">Connect with others who understand what you're going through. <br>
+                        Our support groups provide a safe space for students to share their experiences, receive support, and connect
+                        with peers who have faced similar situations.<br>
+                        <br>- Guided by trained facilitators<br>
+                        - Confidential and non-judgmental environment<br>
+                        - Opportunities to share your story and connect with others<br>
+                        - Supportive community to help you heal and grow
+                    </p>
+                    <br>
+                    <div class="meeting-details">
+                        <h2>Meeting Details</h2>
+                        <ul>
+                            <li><strong>Frequency:</strong> Every Wednesday</li>
+                            <li><strong>Time:</strong> 03:00-05:00pm</li>
+                            <li><strong>Location:</strong> [ location to be updated.... ]</li>
+                            <h4>No registration required, students can attend as needed</h4>
+                        </ul>
+                    </div>
+                </div>
+            
+            
+                <div class="chat-container">
+                    <div class="chat-header">
+                        <h2>Chatbot</h2>
+                    </div>
+                    <div class="chat-box" id="chat-box"></div>
+                    <div class="chat-input-container">
+                        <input type="text" id="user-input" placeholder="Type a message..." />
+                        <button onclick="sendMessage()">Send</button>
+                    </div>
+                </div>
+        </div>
+        
+        <div class="footer">
+            <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.ump.ac.za" target="_blank"><i class='bx bx-world'></i></a>
+            <p>© 2024 UMP SafeSpace</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script>
+        fetch('knowledge.json')
+            .then(response => response.json())
+            .then(data => console.log(data));
+    </script>
+</body>
+</html>

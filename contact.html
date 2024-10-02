@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="stylec.css">
+    <title>UMP SafeSpace Contact Us</title>
+</head>
+<body>
+ <div class="wrapper">
+    <nav class="nav">
+        <div class="nav-logo">
+            <img src="logo.jpg" alt="UMP SafeSpace Logo" class="logo">
+            <p>UMP SAFE SPACE</p>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="homepage.html" class="link">Home</a></li>
+                <li><a href="about.html" class="link">About Us</a></li>
+                <li><a href="services.html" class="link">Services</a></li>
+                <li><a href="contact.html" class="link active">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="nav-search">
+            <input type="text" class="search-input" placeholder="Search...">
+            <button class="btn search-btn"><i class='bx bx-search'></i></button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="bx bx-menu" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1>Contact Us</h1>
+        <p>Get in touch with us for support, inquiries, or feedback. We are here to assist you.</p>
+        
+        <!-- Contact Information Section -->
+        <div class="contact-info">
+            <div class="info-item">
+                <i class='bx bxs-phone-call'></i>
+                <p>+27123456789</p>
+            </div>
+            <div class="info-item">
+                <i class='bx bxs-envelope'></i>
+                <p>contact@umpsafespace.com</p>
+            </div>
+            <div class="info-item">
+                <i class='bx bxs-map'></i>
+                <p>University of Mpumalanga</p>
+            </div>
+        </div>
+
+        <div class="form-and-map">
+            <!-- Contact Form -->
+            <form action="#" method="post" onsubmit="return validateForm()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+
+            <!-- Geo-Location Map -->
+            <div class="geo-location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.835401498934!2d31.02272881539394!3d-25.46984128377133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1eacc4b849f2d907%3A0xf049e6de2a1ec7b7!2sUniversity%20of%20Mpumalanga!5e0!3m2!1sen!2sza!4v1691684939832!5m2!1sen!2sza" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+<br>
+    <div class="footer">
+        <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter'></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
+        <a href="https://www.ump.ac.za" target="_blank"><i class='bx bx-world'></i></a>
+        <p>© 2024 UMP SafeSpace</p>
+    </div>
+
+    <script src="scriptc.js"></script>
+</body>
+</html>

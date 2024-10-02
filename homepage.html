@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMP Safe Space</title>
+    <link rel="stylesheet" href="styleh.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <img src="logo.jpg" alt="UMP SafeSpace Logo" class="logo">
+                <p>UMP SAFE SPACE</p>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="homepage.html" class="link active">Home</a></li>
+                    <li><a href="about.html" class="link">About Us</a></li>
+                    <li><a href="services.html" class="link">Services</a></li>
+                    <li><a href="contact.html" class="link">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="nav-search">
+                <input type="text" class="search-input" placeholder="Search...">
+                <button class="search-btn">Search</button>
+            </div>
+        </nav>
+
+        <main class="content">
+            <h1>WELCOME TO UMP SAFE SPACE</h1>
+            <h2>Addressing Gender-Based Violence and Harassment</h2>
+            <p class="centered-text">Creating a Safer University Environment</p>
+        </main>
+
+        <section class="container1">
+            <div class="article-box">
+                <img src="mmm.jpeg" alt="Understanding Harassment" class="article-image">
+                <h2 class="article-heading">Understanding Harassment</h2>
+                <p class="article-content">
+                    <span class="short-text">Harassment is a harmful behavior where someone intentionally bothers, scares, or hurts another person repeatedly. This can take many forms, including saying mean or hurtful words, sending unwanted messages or pictures, touching or hitting someone without their consent, following or watching someone without their permission, or spreading rumors or lies about them...</span>
+                    <span class="full-text">Types of Harassment<br><br>
+                    Verbal Harassment: Includes name-calling, insults, and threats. It can erode self-esteem and lead to emotional distress.<br><br>
+                    Physical Harassment: Involves any unwanted physical contact, such as hitting, pushing, or inappropriate touching.<br><br>
+                    Emotional Harassment: Encompasses manipulation, isolation, and intimidation tactics designed to control or harm someone psychologically.</span>
+                    <span class="read-more">See More</span>
+                </p>
+            </div>
+            <div class="article-box">
+                <img src="hh.jpg" alt="Legal Information for Victims" class="article-image">
+                <h2 class="article-heading">Legal Information for Victims of Harassment</h2>
+                <p class="article-content">
+                    <span class="short-text">Know Your Rights<br><br>
+                    As a victim of harassment, it's crucial to understand your legal rights and the resources available to you. Laws vary by jurisdiction, but there are common protections in place to safeguard individuals from harassment...</span>
+                    <span class="full-text">Legal Protections<br><br>
+                    Restraining Orders: Victims can apply for restraining orders or protection orders to legally prevent the harasser from contacting or approaching them.<br><br>
+                    - Title IX of the Education Amendments (1972): Prohibits sex-based discrimination, including sexual harassment and assault.<br><br>
+                    - Title VI of the Civil Rights Act (1964): Prohibits discrimination based on race, color, or national origin.<br><br>
+                    - Americans with Disabilities Act (1990): Prohibits discrimination against students with disabilities.<br>
+                    - University policies: universities have their own policies and codes of conduct that prohibit harassment and outline procedures for reporting and addressing incidents.</span>
+                    <span class="read-more">See More</span>
+                </p>
+            </div>
+            <div class="article-box">
+                <img src="re.jpg" alt="Support Services" class="article-image">
+                <h2 class="article-heading">Support Services for Victims of Harassment</h2>
+                <p class="article-content">
+                    <span class="short-text">Accessing professional counseling services can be a crucial step in your healing journey. Counselors and therapists provide a safe space to discuss your experiences and develop coping mechanisms. Our university's counselling services are here to support you every step of the way. Seeking help is a sign of strength, not weakness...</span>
+                    <span class="full-text">Counselling Service<br><br>
+                    UMP Safe Space offers confidential counselling services to support students' mental health and well-being.<br><br>
+                    Our counselling services include:<br>
+                    - Individual and group counselling sessions<br>
+                    - Crisis intervention and support<br>
+                    - Referrals to off-campus resources<br><br>
+                    Students can access these services through:<br>
+                    - University Counselling Centre (UCC)<br>
+                    - Student Health Services (SHS)<br>
+                    - Our website: [website URL]<br><br>
+                    Our website offers:<br>
+                    - Online resources and support groups<br>
+                    - Self-help guides and articles<br>
+                    - Contact information for our counselling team<br><br>
+                    Remember, our counselling services are confidential, free, and available to all students. Don't hesitate to reach out for support.</span>
+                    <span class="read-more">See More</span>
+                </p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.ump.ac.za" target="_blank"><i class='bx bx-world'></i></a>
+            <p>© 2024 UMP SafeSpace</p>
+        </footer>
+
+        <script>
+            document.querySelectorAll('.read-more').forEach(button => {
+                button.addEventListener('click', function() {
+                    const fullText = this.previousElementSibling;
+                    const shortText = fullText.previousElementSibling;
+                    if (fullText.style.display === 'none') {
+                        fullText.style.display = 'inline';
+                        shortText.style.display = 'none';
+                        this.textContent = 'See Less';
+                    } else {
+                        fullText.style.display = 'none';
+                        shortText.style.display = 'inline';
+                        this.textContent = 'See More';
+                    }
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>

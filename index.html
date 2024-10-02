@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>UMP SafeSpace</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav">
+            <div class="nav-logo">
+                <img src="logo.jpg" alt="UMP SafeSpace Logo" class="logo">
+                <p>UMP SAFE SPACE</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#" class="link active">Home</a></li>
+                    <li><a href="#" class="link">About Us</a></li>
+                    <li><a href="#" class="link">Services</a></li>
+                    <li><a href="#" class="link">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn white-btn" id="loginBtn" onclick="showLogin()">Sign In</button>
+                <button class="btn" id="registerBtn" onclick="showRegister()">Sign Up</button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+        
+        <div class="home-content">
+            <h1>Welcome to UMP SafeSpace</h1>
+            <p>Your safety, our priority. We are here to help you with any issues related to gender-based violence and harassment.</p>
+        </div>
+
+        <div class="form-container">
+            <div class="anonymous-report-container">
+                <header>Anonymous Report</header>
+                <div class="input-box">
+                    <textarea class="input-field" placeholder="Enter your report here"></textarea>
+                </div>
+                <div class="input-box">
+                    <input type="submit" class="submit" value="Submit Report" onclick="submitReport()">
+                </div>
+            </div>
+
+            <div class="form-box">
+                <div class="login-container" id="login">
+                    <div class="top">
+                        <span>Don't have an account? <a href="#" onclick="showRegister()">Sign Up</a></span><br>
+                        <header>Login</header>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="input-field" id="login-username" placeholder="Username or Email">
+                        <i class="bx bx-user"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" class="input-field" id="login-password" placeholder="Password">
+                        <i class="bx bx-lock-alt"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" class="submit" value="Sign In" onclick="validateLogin()">
+                    </div>
+                    <div class="two-col">
+                        <div class="one">
+                            <input type="checkbox" id="login-check">
+                            <label for="login-check"> Remember Me</label>
+                        </div>
+                        <div class="two">
+                            <label><a href="#">Forgot password?</a></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-box register-container" id="register" style="display: none;">
+            <div class="top">
+                <span>Have an account? <a href="#" onclick="showLogin()">Login</a></span>
+                <header>Sign Up</header>
+            </div>
+            <div class="two-forms">
+                <div class="input-box">
+                    <input type="text" class="input-field" id="first-name" placeholder="Firstname">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" id="last-name" placeholder="Lastname">
+                    <i class="bx bx-user"></i>
+                </div>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" id="register-email" placeholder="Email">
+                <i class="bx bx-envelope"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" id="register-password" placeholder="Password">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" id="repeat-password" placeholder="Repeat Password">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" value="Register" onclick="validateRegistration()">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="register-check">
+                    <label for="register-check"> I agree to the <a href="#" onclick="showTerms()">Terms & Conditions</a></label>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.ump.ac.za" target="_blank"><i class='bx bx-world'></i></a>
+            <p>© 2024 UMP SafeSpace</p>
+        </div>
+
+        <!-- Error Popup Box -->
+        <div id="error-popup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <p id="error-message"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

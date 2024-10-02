@@ -1,0 +1,254 @@
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #262955;
+    color: #f7a703;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(#262955, transparent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.nav-logo .logo {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.nav-logo p {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.nav-menu ul li {
+    margin: 0 15px;
+}
+
+.nav-menu ul li .link {
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    padding-bottom: 10px;
+    transition: border-bottom 0.3s ease;
+}
+
+.nav-menu ul li .link:hover, .nav-menu ul li .active {
+    border-bottom: 2px solid #fff;
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search-input {
+    height: 35px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.search-btn {
+    height: 35px;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid #ccc;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.content {
+    text-align: center;
+    padding: 100px 20px 20px;
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #f7a703;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.grid-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.grid-item h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #f7a703;
+}
+
+.grid-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.grid-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #f7a703;
+}
+
+.meeting-details {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: #f7a703;
+}
+
+.meeting-details h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.meeting-details ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.meeting-details ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    background: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.chat-header {
+    background: #f7a703;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.chat-box {
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    background: #262955;
+    color: #fff;
+}
+
+.chat-input-container {
+    display: flex;
+    padding: 10px;
+    background: #444;
+}
+
+.chat-input-container input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #fff;
+    background: #555;
+}
+
+.chat-input-container button {
+    background: #f7a703;
+    border: none;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    color: #fff;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #262955;
+    color: #f7a703;
+    position: relative;
+}
+
+.footer a {
+    color: #f7a703;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.footer p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #f7a703;
+}
